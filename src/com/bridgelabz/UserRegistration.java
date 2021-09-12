@@ -81,7 +81,7 @@ import java.util.regex.Matcher;
 				    
 				    //Ruel– minimum 8 Characters
   
-				    Pattern pattern=Pattern.compile("^[A-Za-z0-9]{8,20}$"); //delcaration of pattern
+				    Pattern pattern=Pattern.compile("^(?=.*[a-z])(?=.*[A-Z]).{8,}$"); //delcaration of pattern
 				    Matcher matcher =pattern.matcher(Password);     //delcaration of matcher
 				 //   if (matcher.equals(Password))
 				    if(matcher.find()) {
@@ -93,6 +93,3 @@ import java.util.regex.Matcher;
 				    	}
 	    }
 	}
-
-
-
