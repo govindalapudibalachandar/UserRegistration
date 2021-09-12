@@ -7,6 +7,7 @@ public class RegexMain {
        UserRegistration regex = new UserRegistration();
        
        regex.Firstname();
+       regex.Lastname();
        
 	}
 

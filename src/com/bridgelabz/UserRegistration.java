@@ -21,8 +21,23 @@ import java.util.regex.Matcher;
 	    }
 	    	else {
 	    		System.out.println("Name Is Not Valid");
-	    		
+	    	}	
 	    	}
+	    //lastname method
+	    public void Lastname() {
+		    System.out.println("Enter A Lastname");
+		    String Lastname = reader.next();
+		    
+		     Pattern pattern=Pattern.compile("[A-Z][a-z]"); //delcaration of pattern
+		    Matcher matcher =pattern.matcher(Lastname);     //delcaration of matcher
+		 //   if (matcher.equals(Lastname))
+		    if(matcher.find()) {
+		    	System.out.println("Name Is Valid");
+		    }
+		    	else {
+		    		System.out.println("Name Is Not Valid");
+		    		
+		    	}
 	    	
 	    }
 	}
