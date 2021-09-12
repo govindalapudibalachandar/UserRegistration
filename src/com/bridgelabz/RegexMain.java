@@ -10,6 +10,7 @@ public class RegexMain {
        regex.Lastname();
        regex.Email();
        regex.Mobilenumber();
+       regex.Password();
        
 	}
 

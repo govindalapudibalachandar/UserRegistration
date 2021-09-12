@@ -72,6 +72,25 @@ import java.util.regex.Matcher;
 			    		System.out.println("Mobilenumber Is Not Valid");
 			    		
 			    	}
+		    }
+
+			    //Password method
+			    public void Password() {
+				    System.out.println("Enter A Password");
+				    String Password = reader.next();
+				    
+				    //Ruel– minimum 8 Characters
+  
+				    Pattern pattern=Pattern.compile("^[A-Za-z0-9]{8,20}$"); //delcaration of pattern
+				    Matcher matcher =pattern.matcher(Password);     //delcaration of matcher
+				 //   if (matcher.equals(Password))
+				    if(matcher.find()) {
+				    	System.out.println("Password Is Valid");
+				    }
+				    	else {
+				    		System.out.println("Password Is Not Valid");
+				    		
+				    	}
 	    }
 	}
 
