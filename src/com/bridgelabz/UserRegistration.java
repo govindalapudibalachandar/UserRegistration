@@ -55,7 +55,23 @@ import java.util.regex.Matcher;
 			    		System.out.println("Email Is Not Valid");
 			    		
 			    	}
-		    	
+		    }
+		    
+		    //mobile Format method
+		    public void Mobilenumber() {
+			    System.out.println("Enter A MobileNumber");
+			    String Mobilenumber = reader.next();
+			    
+			     Pattern pattern=Pattern.compile("[91][0-9]{9}"); //delcaration of pattern
+			    Matcher matcher =pattern.matcher(Mobilenumber);     //delcaration of matcher
+			 //   if (matcher.equals(Mobilenumber))
+			    if(matcher.find()) {
+			    	System.out.println("Mobilenumber Is Valid");
+			    }
+			    	else {
+			    		System.out.println("Mobilenumber Is Not Valid");
+			    		
+			    	}
 	    }
 	}
 
