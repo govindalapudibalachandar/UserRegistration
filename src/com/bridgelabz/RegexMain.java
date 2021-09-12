@@ -8,6 +8,7 @@ public class RegexMain {
        
        regex.Firstname();
        regex.Lastname();
+       regex.Email();
        
 	}
 

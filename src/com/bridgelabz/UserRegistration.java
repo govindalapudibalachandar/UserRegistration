@@ -38,7 +38,24 @@ import java.util.regex.Matcher;
 		    		System.out.println("Name Is Not Valid");
 		    		
 		    	}
-	    	
+	    }
+
+		    //Email method
+		    public void Email() {
+			    System.out.println("Enter A Email");
+			    String Email = reader.next();
+			    
+                Pattern pattern=Pattern.compile("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"); //delcaration of pattern
+			    Matcher matcher =pattern.matcher(Email);     //delcaration of matcher
+			 //   if (matcher.equals(Email))
+			    if(matcher.find()) {
+			    	System.out.println("Email Is Valid");
+			    }
+			    	else {
+			    		System.out.println("Email Is Not Valid");
+			    		
+			    	}
+		    	
 	    }
 	}
 
