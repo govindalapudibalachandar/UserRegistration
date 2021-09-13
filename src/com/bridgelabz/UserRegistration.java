@@ -79,9 +79,9 @@ import java.util.regex.Matcher;
 				    System.out.println("Enter A Password");
 				    String Password = reader.next();
 				    
-				    //Ruel– minimum 8 Characters &&Atleast one upper case
+				    //Ruel– minimum 8 Characters &&Atleast one upper case&&one special character
   
-				    Pattern pattern=Pattern.compile("^(?=.[A-Za-z0-9])(?=.*[0-9])(?=.*[A-Z]).{8,}$"); //delcaration of pattern
+				    Pattern pattern=Pattern.compile("^(?=.[A-Za-z0-9])(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}$"); //delcaration of pattern
 				    Matcher matcher =pattern.matcher(Password);     //delcaration of matcher
 				 //   if (matcher.equals(Password))
 				    if(matcher.find()) {
