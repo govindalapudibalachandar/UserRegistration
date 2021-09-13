@@ -79,13 +79,13 @@ import java.util.regex.Matcher;
 				    System.out.println("Enter A Password");
 				    String Password = reader.next();
 				    
-				    //Ruel– minimum 8 Characters
+				    //Ruel– minimum 8 Characters &&Atleast one upper case
   
 				    Pattern pattern=Pattern.compile("^(?=.*[a-z])(?=.*[A-Z]).{8,}$"); //delcaration of pattern
 				    Matcher matcher =pattern.matcher(Password);     //delcaration of matcher
 				 //   if (matcher.equals(Password))
 				    if(matcher.find()) {
-				    	System.out.println("Password Is Valid");
+				    	    System.out.println("Password Is Valid");
 				    }
 				    	else {
 				    		System.out.println("Password Is Not Valid");
